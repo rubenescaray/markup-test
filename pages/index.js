@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Nav from '../components/nav'
 import Main from '../components/main'
+import Cards from '../components/cards'
 
 const Home = () => (
   <div className="homepage">
@@ -13,6 +14,7 @@ const Home = () => (
     <div className="content">
       <Nav />
       <Main />
+      <Cards />
     </div>
 
     <style jsx global>{`

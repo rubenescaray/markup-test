@@ -1,4 +1,5 @@
 import React from 'react'
+import CustomButton from './button'
 
 const Main = () => (
   <div className="main">
@@ -7,16 +8,15 @@ const Main = () => (
       <h4 className="main-h4">a business idea, a startup idea, a project idea</h4>
       <p>We'll send you a daily email reminding you to submit an idea.</p>
       <p>Just respond to it and we'll save it for you</p>
-      <div className="main-btn-container">
-        <div className="main-btn">Sign Up</div>
-      </div>
+      <CustomButton text="Sign Up" />
     </div>
     <div class="main-image">
       <img src="/img-01.png" className="img-01" />
     </div>
     <style jsx>{`
       .main {
-        height: 40vh;
+        margin-top: 2em;
+        height: 80vh;
         display: flex;
         justify-content: space-between;
       }
@@ -59,9 +59,9 @@ const Main = () => (
         color: rgba(255,255,255,0.8);
         text-align: center;
         width: 80%;
-        height: 25%;
+        height: 20%;
         margin: 35px auto 0px auto;
-        padding-top: 10px;
+        padding-top: 12px;
         font-size: 0.8rem;
       }
 
