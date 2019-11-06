@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 
 const Nav = () => (
   <div className="nav">
@@ -27,11 +26,14 @@ const Nav = () => (
 
       .login p {
         color: rgb(190,190, 190);
+        cursor: pointer;
+        font-size: 0.8rem;
+        line-height: 2.3;
       }
 
       .user-icon {
         width: 100%;
-        max-width: 50px;
+        max-width: 60px;
         height: auto;
         max-height: 60px;
       }

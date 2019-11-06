@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Nav from '../components/nav'
+import Main from '../components/main'
 
 const Home = () => (
   <div className="homepage">
@@ -9,8 +10,9 @@ const Home = () => (
       <link rel='icon' href='/favicon.ico' />
     </Head>
 
-    <div className="main">
+    <div className="content">
       <Nav />
+      <Main />
     </div>
 
     <style jsx global>{`
@@ -22,7 +24,7 @@ const Home = () => (
         padding: 3.5em 2em 2em 2em;
       }
       
-      .main {
+      .content {
         width: 70vw;
         margin: 0 auto;
       }
