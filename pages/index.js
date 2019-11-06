@@ -4,6 +4,7 @@ import Nav from '../components/nav'
 import Main from '../components/main'
 import Cards from '../components/cards'
 import HowDoesItWork from '../components/how-does-it-work'
+import Footer from '../components/footer'
 
 const Home = () => (
   <div className="homepage">
@@ -17,6 +18,8 @@ const Home = () => (
       <Main />
       <Cards />
       <HowDoesItWork />
+      <hr style={{backgroundColor: 'gray', height: '1px', border: '0'}} />
+      <Footer />
     </div>
 
     <style jsx global>{`
