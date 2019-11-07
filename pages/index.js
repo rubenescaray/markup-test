@@ -28,12 +28,23 @@ const Home = () => (
       }
 
       .homepage {
-        padding: 3.5em 2em 2em 2em;
+        padding: 3.em 2 2em 2em;
       }
       
       .content {
         width: 70vw;
         margin: 0 auto;
+      }
+
+      @media (max-width: 1000px){
+        .homepage {
+          padding: 0.5em;
+        }
+
+        .content {
+          width: 90vw;
+          margin: 0.5em;
+        } 
       }
     `}</style>
   </div>

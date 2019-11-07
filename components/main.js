@@ -16,12 +16,14 @@ const Main = () => (
     <style jsx>{`
       .main {
         margin-top: 2em;
-        height: 80vh;
+        /* height: 80vh; */
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
       }
 
       .main-content {
+        flex: 1;
         margin-top: 6em;
       }
 
@@ -65,8 +67,21 @@ const Main = () => (
         font-size: 0.8rem;
       }
 
-      .img-01 {
 
+      @media (max-width: 1000px){
+        .main {
+          margin-top: 0;
+          width: 80vw;
+        }
+
+        .main-content {
+          margin-top: 1em;
+          text-align: center;
+        }
+
+        .img-01 {
+          display: none;
+        }
       }
     `}</style>
   </div>

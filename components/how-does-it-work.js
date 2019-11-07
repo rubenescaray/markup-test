@@ -15,8 +15,9 @@ const HowDoesItWork = () => (
     <style jsx>{`
       .how-does-it-work {
         margin: 50px auto;
-        height: 60vh;
+        /* height: 60vh; */
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
       }
 
@@ -48,6 +49,20 @@ const HowDoesItWork = () => (
         height: 2em;
         margin-top: 4em;
         padding-top: 10px;
+      }
+
+      @media (max-width: 1000px){
+        .how-image {
+          margin: 0 auto;
+        }
+
+        .how-content {
+          text-align: center;
+        }
+
+        .how-btn {
+          margin: 4em auto 0em auto;
+        }
       }
     `}</style>
   </div>

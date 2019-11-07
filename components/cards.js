@@ -58,14 +58,14 @@ const Cards = () => (
         </div>
       </div>
     </div>
-    <div style={{margin: '30px auto', width: '200px'}}>
+    <div className="card-button">
       <CustomButton text="See More" />
     </div>
     <style jsx>{`
       .cards-content {
         margin: 0 auto;
         text-align: center;
-        height: 60vh;
+        /* height: 60vh; */
         width: 70vw;
       }
 
@@ -74,14 +74,15 @@ const Cards = () => (
       }
 
       .cards {
+        align-item: flex-start;
         margin-top: 2em;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
       }
 
       .card {
-        width: 22vw;
-        height: 31vh;
+        flex: 0 0 22vw;
         border: 1.5px gray solid;
         text-align: left;
         border-radius: 5px;
@@ -92,17 +93,17 @@ const Cards = () => (
       }
 
       .card > p {
-        padding: 0em 1.5em 0em 2em;
+        padding: 1% 1.5% 0% 5%;
       }
 
       hr {
         width: 70%;
-        margin: 0px 0px 0px 2em;
+        margin: 0px 0px 0px 5%;
       }
 
       .card-footer {
         display: flex;
-        padding: 5px 0px 5px 1em;
+        padding: 5% 0% 5% 1%;
       }
 
       .card-picture {
@@ -112,6 +113,26 @@ const Cards = () => (
       .card-user > p {
         font-size: 0.7rem;
         margin: 5px;
+      }
+
+      .card-button {
+        margin: 30px auto;
+        width: 200px;
+      }
+
+      @media (max-width: 1000px){
+        .cards-content {
+          margin: 0 auto;
+        }
+
+        .card {
+          flex: 0 0 60vw;
+          margin-bottom: 2em;
+        }
+
+        .card-button {
+          width: 100%;
+        }
       }
     `}</style>
   </div>

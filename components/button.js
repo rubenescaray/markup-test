@@ -27,6 +27,12 @@ const CustomButton = ({ text }) => {
           padding-top: 12px;
           font-size: 0.8rem;
         }
+
+        @media (max-width: 1000px){
+        .main-btn-container {
+          margin: 2em auto;
+        }
+      }
       `}</style>
     </div>
   )
